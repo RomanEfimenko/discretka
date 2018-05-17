@@ -1,0 +1,38 @@
+<html> 
+<head>    
+    <meta charset = "utf-8">
+    <title>Калькулятор</title>
+    <script src="App.js"></script>
+    <script src="Resourses.js"></script>
+    <script src="Formuls.js"></script>
+    <script src="Information.js"></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body style="margin: 0px">
+    <div>
+        <form>
+                <table style="width: 500px; height: 50px; background: aliceblue; display:block;">
+                <tr><td><span style="font-family: 'Calibri'; font-size: 20;">by Efimenko Roman 1P-14</span></td></tr>
+                </table>
+                <table style="width: 500px; height: 88px; background: aliceblue; display:block;">
+                <tr style="height: 25px;">
+                    <td style="width: 33.3%"><input id="b1" type="button" onclick="Information.setActive(1)" value="Факторіал" class="knopki" style="background: mediumturquoise;">
+                    </td>
+                    <td style="width: 33.3%"><input id="b2" type="button" onclick="Information.setActive(2)" value="Числа Каталанна" class="knopki"></td>
+                    <td style="width: 33.3%"><input id="b3" type="button" onclick="Information.setActive(3)" value="Числа Фібоначчі" class="knopki"></td>
+                </tr><tr style="width: 500px; height: 25px;">
+                    <td style="width: 33.3%"><input id="b4" type="button" onclick="Information.setActive(4)" value="Перевірка простоти числа" class="knopki"></td>
+                    <td style="width: 33.3%"><input id="b5" type="button" onclick="Information.setActive(5)" value="Алг. Евкліда. НСД і НСК" class="knopki"></td>
+                    <td style="width: 33.3%"><input id="b6" type="button" onclick="Information.setActive(6)" value="Досконалі числа" class="knopki"></td>
+                </tr><tr style="height: 25px;">   
+                    <td colspan="3">
+                    <input type="button" id="help" class="knopki" style="width: 25px; height: 25px;" onclick="Information.ClickHelp(Information.key)" value="?">
+                    <input type="text" id="input" onkeypress="if(event.keyCode == 13) ButtonUse();" style="width: 330px; background: azure;" value="5">
+                    <input type="button" id="button" onclick="ButtonUse()" value="Порахувати" class="knopki" style="width: 130px;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body> 
+</html>

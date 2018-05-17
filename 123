@@ -1,0 +1,31 @@
+<script>
+
+result = "1";
+
+var getDoskonalostNumbera = function(n) {
+		var sum = 0;
+		for(var i = 1; i < n; i++) {
+			if(n % i == 0)
+				sum += i;
+		}
+		if(i==sum) result = "Це досконале число"; else result = "Це не досконале число";
+	}
+
+var ButtonUse = function () {
+	var x = document.getElementById("input1").value;
+	getDoskonalostNumbera(x);
+	alert(result);
+}
+</script>
+
+<table>
+	<tbody>
+		<tr>
+			<td>Введіть число</td>
+			<td><input id="input1" type="text" value="3" /></td>
+		</tr>
+		<tr>
+			<td><input id="button" onclick="ButtonUse()" type="button" value="Перевірити" /></td>
+		</tr>
+	</tbody>
+</table>
